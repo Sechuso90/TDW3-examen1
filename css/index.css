@@ -1,0 +1,521 @@
+/* General Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: #fff;
+}
+
+/* Header Button Styles */
+.header button {
+    background: #ff0000;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    padding-left: 10px;
+}
+
+.navbar-toggler {
+    color: #000;
+    font-size: 27px;
+    margin-left: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+    margin-left: auto;
+
+}
+
+
+.navbar img {
+    width: 10rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+@media (min-width: 430px) and (max-width: 900px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Home Section Styles */
+.home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.home video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.3);
+}
+
+.homecontent {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .homecontent {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .homecontent {
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.homecontent h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.homecontent p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.homecontent button {
+    background: #ffe600;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Custom CSS for the amenities section */
+
+.amenities {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    /* Ensure text is readable over the video */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 100vh;
+}
+
+
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    filter: brightness(0.3);
+
+}
+
+.video-wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.amenitiescontent {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+@media (max-width: 500px) {
+    .amenitiescontent {
+        position: absolute !important;
+        top: 0% !important;
+        left: 0% !important;
+        width: 100% !important;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .amenitiescontent {
+        position: absolute !important;
+        top: 20% !important;
+        left: 5% !important;
+        width: 100% !important;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+}
+
+
+
+.amenitiescontent .animate__animated.is-visible {
+    visibility: visible;
+    animation: animate__bounceInUp 2s forwards;
+}
+
+
+.amenitiescontent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.amenitiescontent .row {
+    text-align: center;
+}
+
+.amenitiescontent .cards {
+    margin-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.amenitiescontent .cards .target {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.amenitiescontent .cards i {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.amenitiescontent .cards .fa-basketball {
+    color: #ff8800;
+}
+
+.amenitiescontent .cards .fa-person-swimming {
+    color: #008cff;
+}
+
+.amenitiescontent .cards .fa-ranking-star {
+    color: #51ff00;
+}
+
+.amenitiescontent .cards .fa-arrow-up-wide-short {
+    color: #ffe600;
+}
+
+
+.amenitiescontent .cards .card-body {
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+}
+
+.fitness {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    /* Ensure text is readable over the video */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 100vh;
+}
+
+.fitnesscontent {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Semi-transparent background for better readability */
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+}
+
+.fitnesscontent .animate__animated.is-visible {
+    visibility: visible;
+    animation: animate__bounceInUp 2s forwards;
+}
+
+.fitnesscontent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.fitnesscontent .row {
+    text-align: center;
+}
+
+.fitnesscontent .cards {
+    margin-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.fitnesscontent .cards .target {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.fitnesscontent .cards i {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.fitnesscontent .cards .card-body {
+    text-align: center;
+}
+
+.nutrition {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    /* Ensure text is readable over the video */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 100vh;
+}
+
+.nutritioncontent {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: Semi-transparent background for better readability */
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+}
+
+.nutritioncontent .animate__animated.is-visible {
+    visibility: visible;
+    animation: animate__bounceInUp 2s forwards;
+}
+
+.nutritioncontent h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.nutritioncontent .row {
+    text-align: center;
+}
+
+.nutritioncontent .cards {
+    margin-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nutritioncontent .cards .target {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nutritioncontent .cards i {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.nutritioncontent .cards .card-body {
+    text-align: center;
+}
+
+
+.membershipcontent h2 {
+    font-size: 36px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.membershipcontent .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.membershipcontent .comparison-table th,
+.membershipcontent .comparison-table td {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.membershipcontent .comparison-table th {
+    background-color: #f8f8f8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.membershipcontent .comparison-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.membershipcontent .plan-highlight {
+    border: 2px solid orange;
+    position: relative;
+}
+
+.membershipcontent .plan-highlight::before {
+    content: "Más beneficios";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.membershipcontent .check-mark,
+.membershipcontent .cross-mark {
+    font-size: 18px;
+    color: green;
+}
+
+.membershipcontent .cross-mark {
+    color: red;
+}
+
+.membershipcontent .plan-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.membershipcontent .plan-duration {
+    font-size: 12px;
+    color: grey;
+}
+
+
+.linea-hr {
+    color: #b3a422;
+    border-top: solid 5px #b3a422;
+    border-bottom: solid 5px #b3a422;
+}
+
+/* Scroll Top Styles */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.botonScrollTop {
+    background-color: #000;
+    color: #8d8d8d;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonScrollTop:hover {
+    background-color: #555;
+}
+
+.fas.fa-angle-up {
+    font-size: 24px;
+}
+
+/* Footer Styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.seccionfooter {
+    background-color: rgb(29, 29, 29);
+    margin-top: 0%;
+}
+
+.seccionfooter p {
+    color: #ffffff;
+    margin: 1px;
+    text-align: center;
+}
+
+.linea-footer {
+    border-top: 1px solid #ffe600;
+    margin-top: 20px;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icono {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+}

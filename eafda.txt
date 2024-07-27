@@ -1,0 +1,27 @@
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section div {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Specific Section Styles */
+.amenities .icon, 
+.fitness .class, 
+.nutrition .tip, 
+.membership .plan {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
